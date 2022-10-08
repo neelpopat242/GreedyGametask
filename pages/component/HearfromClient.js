@@ -1,9 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
 import d11 from "../images/Logo/d11.png"
+import quote from "../images/extra/quote.svg"
 export default function HearfromClient() {
   return (
-    <div className='my-5'>
+    <div  style={{
+      backgroundImage: `url(${quote.src})`,
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "",
+    }}>
       <h4 className='my-5'>Hear it from Clients</h4>
       <div className="container  shadow-lg" style={{ backgroundColor: "white" }}>
         <div className='row px-3'>

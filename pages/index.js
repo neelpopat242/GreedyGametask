@@ -10,6 +10,7 @@ import Partner from './component/Partner'
 import Acquire from './component/Acquire'
 import affbg from '../pages/images/bg_img/aff_img1.png'
 import clibg from '../pages/images/bg_img/cli_img1.png'
+import campaign from '../pages/images/bg_img/campaign.svg'
 
 export default function Home() {
   return (
@@ -30,7 +31,12 @@ export default function Home() {
       <div className='col-md-5' style={{ position: 'fixed', left: '50%', top: '10%', zIndex: '3' ,  }}>
         <Form></Form>
       </div>
-        <div className='row' style={{ backgroundColor: "#F7F9FC" }} >
+        <div className='row' style={{
+          backgroundImage: `url(${campaign.src})`,
+          backgroundColor: "#F7F9FC",
+          width: '100%',
+          height: '100%'
+            }} >
           <div className='col-md-1'>
           </div>
           <div className='col-md-5'>
