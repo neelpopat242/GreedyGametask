@@ -5,7 +5,7 @@ function form() {
     return (
         <>
             <div className=" my-5 py-3 mx-4 px-4 container shadow-lg rounded" style={{ backgroundColor: "white" }}>
-                <form className="needs-validation" novalidate >
+                <form className="needs-validation"  >
                     <div className="row">
 
                         <div className="col-md-5">
