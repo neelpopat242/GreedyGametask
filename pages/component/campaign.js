@@ -6,7 +6,10 @@ import link3 from "../images/img_3.svg";
 import link4 from "../images/img_4.svg";
 import underline from "../images/extra/underline.png"
 import Image from "next/image";
+
+
 function Campaign() {
+    
     return (
         <div>
             <div className="temp" style={{
@@ -14,7 +17,7 @@ function Campaign() {
             }}>
                 <span  className="fs-1">
                     <strong>Result-oriented</strong></span>
-                <div className="col-md-8">
+                <div className="col-6 col-md-8">
                 <Image className="ps-2" src={underline} style={{maxWidth: "fit-content"}} ></Image>
                 </div>
                 

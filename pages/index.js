@@ -11,12 +11,9 @@ import Acquire from './component/Acquire'
 import affbg from '../pages/images/bg_img/aff_img1.png'
 import clibg from '../pages/images/bg_img/cli_img1.png'
 import campaign from '../pages/images/bg_img/campaign.svg'
-import { useMediaQuery } from 'react-responsive'
 
 export default function Home() {
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-width: 1200px)'
-  })
+  
 
   return (
     <div className={styles.container}>

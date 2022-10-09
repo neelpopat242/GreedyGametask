@@ -7,7 +7,6 @@ function form() {
             <div className=" my-5 py-3 mx-4 px-4 container shadow-lg rounded" style={{ backgroundColor: "white" }}>
                 <form className="needs-validation"  >
                     <div className="row">
-
                         <div className="col-md-5">
                             <h6>Name</h6>
                             <input type="text" className="form-control" placeholder="Enter your Full Name" />
