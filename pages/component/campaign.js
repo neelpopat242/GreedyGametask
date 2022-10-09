@@ -18,7 +18,7 @@ function Campaign() {
                 <span  className="fs-1">
                     <strong>Result-oriented</strong></span>
                 <div className="col-6 col-md-8">
-                <Image className="ps-2" src={underline} style={{maxWidth: "fit-content"}} ></Image>
+                <Image className="ps-2" src={underline}  ></Image>
                 </div>
                 
                 </div>

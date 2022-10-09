@@ -11,9 +11,12 @@ import Acquire from './component/Acquire'
 import affbg from '../pages/images/bg_img/aff_img1.png'
 import clibg from '../pages/images/bg_img/cli_img1.png'
 import campaign from '../pages/images/bg_img/campaign.svg'
+import { useMediaQuery } from 'react-responsive'
 
 export default function Home() {
-  
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  })
 
   return (
     <div className={styles.container}>
@@ -40,10 +43,10 @@ export default function Home() {
         </div>
 
 
-        <div className=' col-10 col-md-5 media-div'>
+        <div id="form-fill" className=' col-10 col-md-5 media-div'>
           <Form></Form>
         </div>
-      
+
         <div className='row' style={{
           backgroundImage: `url(${affbg.src})`,
           width: '100%',
@@ -105,6 +108,15 @@ export default function Home() {
         <h5>©2022 GreedyGame, Inc. All rights reserved.</h5>
       </footer>
 
+
+      {!isDesktopOrLaptop &&
+        <div className="">
+          <span>Get a Call back from us</span>
+          <a href="#form-fill">
+          <button type='button' className='my-3 mx-3 btn btn-primary w-50'>Get Started</button>
+          </a>
+        </div>
+      }
     </div>
   )
 }
