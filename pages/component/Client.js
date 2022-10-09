@@ -7,7 +7,7 @@ import inmobi from "../images/Logo/inmobi.png"
 export default function Client() {
   return (
     <div className='opacity-100 my-4' >
-      <h4>Our Top Clients</h4>
+      <h2>Our Top Clients</h2>
       <div className="row">
         <div className='col-6 col-md-4'>
           <Image src={d11}></Image>

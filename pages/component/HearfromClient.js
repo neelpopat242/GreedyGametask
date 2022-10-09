@@ -9,7 +9,7 @@ export default function HearfromClient() {
       backgroundRepeat: "no-repeat",
       backgroundPosition: "",
     }}>
-      <h4 className='my-5'>Hear it from Clients</h4>
+      <h2 className='my-5'>Hear it from Clients</h2>
       <div className="container  shadow-lg" style={{ backgroundColor: "white" }}>
         <div className='row px-3'>
           <div className='col-md-3'>

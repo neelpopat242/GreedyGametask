@@ -10,7 +10,7 @@ import jumpramp from '../images/Logo/jumpramp.png'
 export default function Partner() {
     return (
         <div className=''>
-            <h3 className='my-5'>Our Top Partners</h3>
+            <h2 className='my-5'>Our Top Partners</h2>
             <div className="row my-3">
                 <div className='col-6 col-md-4 '>
                     <Image src={artoon} />

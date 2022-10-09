@@ -4,7 +4,7 @@ function Affilate() {
     return (
         <div >
             <div className="row my-5 mx-3 text-white">
-                <div className="col-6 col-md-3">
+                <div className="col-6 col-md-3 my-3 py-3 ">
                     <h4>
                         300+
                     </h4>
@@ -12,7 +12,7 @@ function Affilate() {
                         Affiliates
                     </small>
                 </div>
-                <div className="col-6 col-md-3">
+                <div className="col-6 col-md-3 my-3 py-3 ">
                     <h4>
                         5K+
                     </h4>
@@ -20,7 +20,7 @@ function Affilate() {
                         Apps Inventory
                     </small>
                 </div>
-                <div className="col-6 col-md-3">
+                <div className="col-6 col-md-3 my-3 py-3 ">
                     <h4>
                         1M+
                     </h4>
@@ -28,7 +28,7 @@ function Affilate() {
                         App Installs
                     </small>
                 </div>
-                <div className="col-6 col-md-3">
+                <div className="col-6 col-md-3 my-3 py-3 ">
                     <h4>
                         3K+
                     </h4>
