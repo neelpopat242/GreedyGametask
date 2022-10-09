@@ -13,9 +13,11 @@ a {
   color: blue;
 }
 
-.temp:nth-child(2) {
-  max-width: fit-content !important;
-}
-
-
-
+@media screen and (min-width: 992px) {
+  .media-div {
+    position: fixed;
+    left: 50%;
+    top: 10%;
+    z-index: 3;
+  }
+}          

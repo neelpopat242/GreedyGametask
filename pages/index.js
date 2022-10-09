@@ -11,32 +11,30 @@ import Acquire from './component/Acquire'
 import affbg from '../pages/images/bg_img/aff_img1.png'
 import clibg from '../pages/images/bg_img/cli_img1.png'
 import campaign from '../pages/images/bg_img/campaign.svg'
+import { useMediaQuery } from 'react-responsive'
 
 export default function Home() {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1200px)'
+  })
+
   return (
     <div className={styles.container}>
       <Head>
         <title>Greedy Game task</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          href="http://fonts.googleapis.com/css?family=Lato:400,700"
-          rel="stylesheet"
-        />
+
       </Head>
 
       <Navb></Navb>
 
-      <div className='' style={{position:'relative'}}>
-
-      <div className='col-md-5' style={{ position: 'fixed', left: '50%', top: '10%', zIndex: '3' ,  }}>
-        <Form></Form>
-      </div>
+      <div className='' style={{ position: 'relative' }}>
         <div className='row' style={{
           backgroundImage: `url(${campaign.src})`,
           backgroundColor: "#F7F9FC",
           width: '100%',
           height: '100%'
-            }} >
+        }} >
           <div className='col-md-1'>
           </div>
           <div className='col-md-5'>
@@ -44,6 +42,11 @@ export default function Home() {
           </div>
         </div>
 
+
+        <div className=' col-10 col-md-5 media-div'>
+          <Form></Form>
+        </div>
+      
         <div className='row' style={{
           backgroundImage: `url(${affbg.src})`,
           width: '100%',
@@ -70,7 +73,7 @@ export default function Home() {
 
         <div className='row' style={{
           backgroundImage: `url(${clibg.src})`,
-          backgroundColor : "#F7F9FC",
+          backgroundColor: "#F7F9FC",
           width: '100%',
           height: '100%'
         }}>
